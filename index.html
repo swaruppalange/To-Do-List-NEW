@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ 
+  <nav>
+    <div id="todo-name">To-Do List</div>
+    <ul id="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#tasks">Tasks</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+
+  <div id="todo-app">
+    <h1>To-Do List</h1>
+    <div id="date-input">
+      <label for="task-date">Select a date:</label>
+      <input type="date" id="task-date">
+    </div>
+    <div id="task-input">
+      <input type="text" id="new-task" placeholder="Add a new task">
+      <select id="task-category">
+        <option value="learning">📘 Learning</option>
+        <option value="work">💼 Work</option>
+
+        <option value="personal"> Personal</option>
+        <option value="other">🔖 Other</option>
+        <option value="shopping"> Shopping</option>
+      </select>
+      <button id="add-task">Add</button>
+    </div>
+    <ul id="task-list"></ul>
+    <div id="filters">
+      <button id="filter-all" class="filter-btn">All</button>
+      <button id="filter-active" class="filter-btn">Active</button>
+      <button id="filter-completed" class="filter-btn">Completed</button>
+    </div>
+    <button id="clear-completed">Clear Completed</button>
+  </div>
+
+  <div id="calendar-view">
+    <h2>View Tasks by Date</h2>
+    <input type="date" id="view-date">
+    <button id="view-tasks">View Tasks</button>
+    <ul id="tasks-by-date"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
